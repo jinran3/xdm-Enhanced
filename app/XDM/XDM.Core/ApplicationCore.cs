@@ -777,10 +777,13 @@ namespace XDM.Core
                 if (validEntry)
                 {
                     RemoveStateFiles(entry.Id, removeInfo);
+                }
 
+                if (!string.IsNullOrEmpty(tempDir))
+                {
                     try
                     {
-                        if (Directory.Exists(tempDir) && !string.IsNullOrEmpty(tempDir))
+                        if (Directory.Exists(tempDir))
                         {
                             Directory.Delete(tempDir, true);
                         }
@@ -788,6 +791,24 @@ namespace XDM.Core
                     catch (Exception ex)
                     {
                         Log.Debug(ex, ex.Message);
+                    }
+                }
+
+                if (!string.IsNullOrEmpty(entry.TargetDir))
+                {
+                    // 旧版本曾在下载目标目录内以任务 ID 命名临时目录（<TargetDir>\<Id>），
+                    // 状态文件已不存在时读不到 TempDir，这里兜底清理，避免残留空目录。
+                    var legacyTempDir = Path.Combine(entry.TargetDir, entry.Id);
+                    if (Directory.Exists(legacyTempDir))
+                    {
+                        try
+                        {
+                            Directory.Delete(legacyTempDir, true);
+                        }
+                        catch (Exception ex)
+                        {
+                            Log.Debug(ex, ex.Message);
+                        }
                     }
                 }
 

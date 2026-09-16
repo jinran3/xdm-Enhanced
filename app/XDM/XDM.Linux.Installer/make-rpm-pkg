@@ -2,7 +2,7 @@
 
 #Please place all the published files under ./binary-source directory
 
-VERSION=8.0.29.1
+VERSION=8.0.29.2
 SRC_DIR=binary-source
 SOURCE_NAME="xdman_gtk-${VERSION}"
 

@@ -1,4 +1,4 @@
-set BUILD_VER=8.0.29.1
+set BUILD_VER=8.0.29.2
 
 RMDIR /S /Q BIN
 
