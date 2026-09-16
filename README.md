@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-	<a href="https://github.com/jinran3/xdm/releases"><img src="https://img.shields.io/github/v/release/jinran3/xdm?color=red&label=release" alt="Release"/></a>
-	<a href="https://github.com/jinran3/xdm/releases"><img src="https://img.shields.io/github/downloads/jinran3/xdm/total?color=blue" alt="Downloads"/></a>
+	<a href="https://github.com/jinran3/xdm-Enhanced/releases"><img src="https://img.shields.io/github/v/release/jinran3/xdm-Enhanced?color=red&label=release" alt="Release"/></a>
+	<a href="https://github.com/jinran3/xdm-Enhanced/releases"><img src="https://img.shields.io/github/downloads/jinran3/xdm-Enhanced/total?color=blue" alt="Downloads"/></a>
 	<a href="LICENSE"><img src="https://img.shields.io/badge/license-OSS-lightgrey" alt="License"/></a>
 </p>
 
@@ -143,7 +143,7 @@ We take testing seriously. Here's exactly what's been verified and what hasn't.
 
 ### Option 1: Download Release
 
-Download the latest release from the [Releases](https://github.com/jinran3/xdm/releases) page.
+Download the latest release from the [Releases](https://github.com/jinran3/xdm-Enhanced/releases) page.
 
 - **Windows:** Install the `.msi` (or portable `.zip`), follow the on-screen browser-integration wizard.
 - **Browser extension:** Monitors Chromium-based browsers (Chrome / Edge / Opera / Vivaldi / Brave) and Firefox.
