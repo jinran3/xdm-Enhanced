@@ -1,0 +1,16 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!-- YouTube color theme: swap the whole UI accent to YouTube official red (#FF0000),
+         layered on top of the light/dark base themes. -->
+    <SolidColorBrush x:Key="CategoryHighlight" Color="#E60000"/>
+    <SolidColorBrush x:Key="ButtonFocusedBorder" Color="#E60000"/>
+    <SolidColorBrush x:Key="TextMouseOverBorder" Color="#E60000"/>
+    <SolidColorBrush x:Key="TextFocusedBorder" Color="#E60000"/>
+    <SolidColorBrush x:Key="ListViewSelectedBackcolor" Color="#E60000"/>
+    <SolidColorBrush x:Key="HyperlinkForecolor" Color="#E60000"/>
+    <SolidColorBrush x:Key="TabSelectionColor" Color="#FF0000"/>
+    <SolidColorBrush x:Key="StatusbarIconcolor" Color="#E60000"/>
+    <SolidColorBrush x:Key="ProgressBarForecolor" Color="#FF0000"/>
+    <SolidColorBrush x:Key="ListViewSelectedForecolor" Color="White"/>
+    <SolidColorBrush x:Key="{x:Static SystemColors.HighlightBrushKey}" Color="#E60000"/>
+</ResourceDictionary>

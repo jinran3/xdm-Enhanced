@@ -1,0 +1,41 @@
+{
+    "name": "XDM Integration Module",
+    "action": {},
+    "manifest_version": 3,
+    "version": "4.0",
+    "description": "Download with Xtreme Download Manager. Now with one-click video download floating button (YouTube).",
+    "host_permissions": [
+        "*://*/*"
+    ],
+    "permissions": [
+        "downloads",
+        "cookies",
+        "webRequest",
+        "tabs",
+        "storage",
+        "contextMenus",
+        "alarms"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://www.youtube.com/watch*",
+                "*://m.youtube.com/watch*",
+                "*://youtube.com/watch*"
+            ],
+            "js": [
+                "float.js"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "background": {
+        "service_worker": "main.js",
+        "type": "module"
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
